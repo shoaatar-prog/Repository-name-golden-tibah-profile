@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ذهبية طيبة للمقاولات العامة | بروفايل تفاعلي ذكي</title>
+  <meta name="description" content="شريك تنفيذ متكامل للمشاريع الإنشائية والتشغيلية من التخطيط إلى التسليم منذ 1990" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #061833;
+      --primary-mid: #0c3d7a;
+      --primary-light: #1565c0;
+      --accent: #e6a817;
+      --accent-bright: #ffd54f;
+      --accent-hover: #f5c842;
+      --accent-soft: #fff8e1;
+      --bg: #eef2f7;
+      --bg-warm: #faf6ef;
+      --card: #ffffff;
+      --text: #0a121c;
+      --muted: #3d4a5c;
+      --border: #cdd5e0;
+      --success: #0d9488;
+      --shadow: 0 6px 28px rgba(6, 24, 51, 0.12);
+      --shadow-strong: 0 14px 44px rgba(6, 24, 51, 0.18);
+      --radius: 16px;
+      --gold-gradient: linear-gradient(135deg, #b8860b 0%, #ffc107 30%, #ffd54f 55%, #e6a817 80%, #c9920f 100%);
+      --blue-gradient: linear-gradient(150deg, #030d1f 0%, #061833 25%, #0a3a7a 55%, #0d4fad 80%, #1565c0 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Cairo', 'Tajawal', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    button, .btn {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+
+    /* ========== Header ========== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 0;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'Tajawal', 'Cairo', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #ffc107 0%, #ffd54f 40%, #e6a817 100%);
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: #061833;
+      font-family: 'Tajawal', 'Cairo', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      box-shadow: 0 4px 16px rgba(255, 193, 7, 0.45);
+    }
+    .nav {
+      display: flex;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      padding: 0.5rem 0.9rem;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--muted);
+      transition: all 0.2s;
+    }
+    .nav a:hover, .nav a.active {
+      background: var(--accent-soft);
+      color: var(--primary);
+    }
+    .header-cta {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: all 0.25s;
+    }
+    .btn-primary {
+      background: var(--blue-gradient);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(10, 31, 68, 0.25);
+    }
+    .btn-primary:hover {
+      filter: brightness(1.1);
+      box-shadow: 0 6px 20px rgba(10, 31, 68, 0.35);
+    }
+    .btn-accent {
+      background: var(--gold-gradient);
+      color: var(--primary);
+      box-shadow: 0 4px 16px rgba(212, 160, 23, 0.35);
+    }
+    .btn-accent:hover {
+      filter: brightness(1.08);
+      box-shadow: 0 6px 22px rgba(212, 160, 23, 0.45);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--border);
+      color: var(--primary);
+    }
+    .btn-outline:hover {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--primary);
+    }
+    .lang-toggle {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.7rem;
+      border-radius: 8px;
+      background: var(--accent-soft);
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* ========== Hero ========== */
+    .hero {
+      background: linear-gradient(155deg, #030d1f 0%, #061833 20%, #0a3a7a 55%, #0d4fad 85%, #1565c0 100%);
+      color: #fff;
+      padding: 4.5rem 1.25rem 5.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 12% 85%, rgba(255, 213, 79, 0.22), transparent 42%),
+        radial-gradient(ellipse at 88% 12%, rgba(21, 101, 192, 0.5), transparent 38%),
+        radial-gradient(ellipse at 50% 50%, rgba(10, 45, 100, 0.3), transparent 60%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: linear-gradient(to top, var(--bg), transparent);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255, 213, 79, 0.18);
+      border: 1px solid rgba(255, 213, 79, 0.55);
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-size: 0.88rem;
+      margin-bottom: 1.25rem;
+      color: #ffd54f;
+      font-weight: 600;
+    }
+    .hero h1 {
+      font-family: 'Tajawal', 'Cairo', sans-serif;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      text-shadow: 0 2px 24px rgba(0,0,0,0.25);
+    }
+    .hero h1 span {
+      background: linear-gradient(135deg, #ffd54f 0%, #ffe082 35%, #e6a817 70%, #ffc107 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 18px rgba(255, 213, 79, 0.35));
+    }
+    .hero-desc {
+      font-size: 1.12rem;
+      opacity: 0.95;
+      max-width: 540px;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .stat {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(240, 193, 75, 0.25);
+      border-radius: 14px;
+      padding: 1.1rem 0.75rem;
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
+    .stat-num {
+      font-family: 'Tajawal', 'Cairo', sans-serif;
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: #ffd54f;
+      display: block;
+      text-shadow: 0 0 24px rgba(255, 213, 79, 0.45);
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      opacity: 0.85;
+      margin-top: 0.25rem;
+    }
+    .hero-visual {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(240, 193, 75, 0.3);
+      border-radius: 22px;
+      padding: 2.25rem;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    }
+    .hero-visual-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .trust-chip {
+      background: rgba(255, 213, 79, 0.15);
+      border: 1px solid rgba(255, 213, 79, 0.4);
+      padding: 0.35rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: #ffd54f;
+      font-weight: 500;
+    }
+
+    /* ========== Sections ========== */
+    .section {
+      padding: 4.5rem 1.25rem;
+    }
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.75rem;
+    }
+    .section-header h2 {
+      font-family: 'Tajawal', 'Cairo', sans-serif;
+      font-size: 2.05rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    .section-header h2::after {
+      content: '';
+      display: block;
+      width: 56px;
+      height: 4px;
+      background: var(--gold-gradient);
+      border-radius: 4px;
+      margin: 0.6rem auto 0;
+    }
+    .section-header p {
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0.75rem auto 0;
+    }
+    .section-alt {
+      background: linear-gradient(180deg, #fff 0%, var(--bg-warm) 100%);
+    }
+
+    /* Cards */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-strong);
+      border-color: rgba(212, 160, 23, 0.4);
+    }
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--gold-gradient);
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 14px rgba(212, 160, 23, 0.3);
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Services accordion */
+    .service-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .service-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.15rem 1.4rem;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--primary);
+      gap: 1rem;
+    }
+    .service-header:hover { background: var(--accent-soft); }
+    .service-item.open {
+      border-color: rgba(212, 160, 23, 0.45);
+      box-shadow: var(--shadow-strong);
+    }
+    .service-num {
+      width: 34px;
+      height: 34px;
+      background: var(--gold-gradient);
+      color: var(--primary);
+      border-radius: 9px;
+      display: grid;
+      place-items: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      box-shadow: 0 3px 10px rgba(212, 160, 23, 0.3);
+    }
+    .service-body {
+      display: none;
+      padding: 0 1.4rem 1.4rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    .service-item.open .service-body { display: block; padding-top: 1rem; }
+    .service-item.open .service-chevron { transform: rotate(180deg); }
+    .service-chevron { transition: transform 0.25s; font-size: 0.9rem; color: var(--muted); }
+    .service-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .tag {
+      background: var(--accent-soft);
+      color: #8a6d0a;
+      padding: 0.25rem 0.7rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid rgba(212, 160, 23, 0.25);
+    }
+
+    /* Projects */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      justify-content: center;
+    }
+    .filter-btn {
+      padding: 0.5rem 1.1rem;
+      border-radius: 50px;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.25s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--gold-gradient);
+      border-color: transparent;
+      color: var(--primary);
+      box-shadow: 0 4px 14px rgba(212, 160, 23, 0.35);
+      font-weight: 600;
+    }
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    }
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-strong);
+      border-color: rgba(212, 160, 23, 0.4);
+    }
+    .project-img {
+      height: 170px;
+      background: linear-gradient(145deg, #061833 0%, #0a3a7a 50%, #0d4fad 100%);
+      display: grid;
+      place-items: center;
+      color: #ffd54f;
+      font-size: 2.6rem;
+      position: relative;
+    }
+    .project-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 80%, rgba(255, 213, 79, 0.25), transparent 55%);
+    }
+    .project-body { padding: 1.25rem; }
+    .project-body h3 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 0.6rem 0;
+    }
+    .project-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+    }
+    .project-stat {
+      background: #f4f6f9;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .project-stat strong { display: block; color: var(--primary); }
+
+    /* Equipment */
+    .equip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .equip-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem 1.25rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    }
+    .equip-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-strong);
+      border-color: rgba(212, 160, 23, 0.4);
+    }
+    .equip-icon { font-size: 2.3rem; margin-bottom: 0.6rem; }
+    .equip-card h4 { color: var(--primary); font-size: 1rem; margin-bottom: 0.3rem; }
+    .equip-status {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .status-available { background: #d1fae5; color: #065f46; }
+    .status-busy { background: var(--accent-soft); color: #8a6d0a; }
+
+    /* About timeline */
+    .timeline {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-right: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--gold-gradient);
+      border-radius: 4px;
+    }
+    .timeline-item {
+      position: relative;
+      padding: 0 0 2rem 0;
+      padding-right: 1.5rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      right: -0.6rem;
+      top: 0.35rem;
+      width: 16px;
+      height: 16px;
+      background: var(--gold-gradient);
+      border: 3px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.35);
+    }
+    .timeline-year {
+      font-family: 'Tajawal', 'Cairo', sans-serif;
+      font-weight: 800;
+      color: #c9920f;
+      font-size: 1.05rem;
+    }
+    .timeline-text { color: var(--muted); margin-top: 0.25rem; }
+
+    /* Values */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .value-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.4rem 1.25rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .value-card:hover {
+      border-color: rgba(212, 160, 23, 0.4);
+      box-shadow: var(--shadow-strong);
+    }
+    .value-card h4 {
+      color: var(--primary);
+      margin-bottom: 0.35rem;
+      position: relative;
+      display: inline-block;
+    }
+    .value-card h4::after {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 3px;
+      background: var(--gold-gradient);
+      border-radius: 2px;
+      margin: 0.4rem auto 0;
+    }
+
+    /* Contact form */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    .contact-info {
+      background: linear-gradient(160deg, #030d1f 0%, #0a3a7a 55%, #0d4fad 100%);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
+    .contact-info h3 { margin-bottom: 1rem; }
+    .contact-info p { opacity: 0.92; margin-bottom: 0.5rem; }
+    .contact-info a { color: #ffd54f; font-weight: 600; }
+    .form-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-strong);
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-bottom: 0.35rem;
+      color: var(--primary);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      background: #fafbfc;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      outline: none;
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.2);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .form-success {
+      display: none;
+      background: #d1fae5;
+      color: #065f46;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+
+    /* Trust */
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .trust-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+      padding: 1.25rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .trust-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-strong);
+      border-color: rgba(212, 160, 23, 0.4);
+    }
+    .trust-card .icon { font-size: 2.1rem; margin-bottom: 0.5rem; }
+    .trust-card h4 { color: var(--primary); font-size: 0.95rem; }
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(160deg, #030d1f 0%, #061833 40%, #0a3a7a 100%);
+      color: rgba(255,255,255,0.9);
+      padding: 3.25rem 1.25rem 1.5rem;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+    .footer h4 {
+      font-family: 'Tajawal', 'Cairo', sans-serif;
+      color: #ffd54f;
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+    .footer a {
+      display: block;
+      margin-bottom: 0.4rem;
+      opacity: 0.85;
+      font-size: 0.9rem;
+      transition: opacity 0.2s, color 0.2s;
+    }
+    .footer a:hover { opacity: 1; color: var(--accent-bright); }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 2rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(240, 193, 75, 0.2);
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.75;
+    }
+
+    /* ========== Chat Assistant ========== */
+    .chat-fab {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      z-index: 200;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--blue-gradient);
+      color: #fff;
+      font-size: 1.6rem;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 6px 24px rgba(10, 31, 68, 0.4);
+      border: 2px solid rgba(240, 193, 75, 0.35);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .chat-fab:hover { transform: scale(1.08); }
+
+    /* WhatsApp floating button */
+    .whatsapp-fab {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 200;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+    }
+    .whatsapp-fab:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+    }
+    .whatsapp-fab svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+    }
+    .whatsapp-tooltip {
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      background: #128C7E;
+      color: #fff;
+      padding: 0.45rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .whatsapp-fab:hover .whatsapp-tooltip {
+      opacity: 1;
+    }
+
+    .chat-panel {
+      position: fixed;
+      bottom: 5.5rem;
+      left: 1.5rem;
+      z-index: 200;
+      width: 360px;
+      max-width: calc(100vw - 2rem);
+      height: 480px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.18);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .chat-panel.open { display: flex; }
+    .chat-header {
+      background: linear-gradient(135deg, #061833 0%, #0a3a7a 60%, #0d4fad 100%);
+      color: #fff;
+      padding: 1rem 1.15rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .chat-header h3 { font-size: 1rem; }
+    .chat-close {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 1.3rem;
+      cursor: pointer;
+      opacity: 0.8;
+    }
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      background: #f7f8fa;
+    }
+    .msg {
+      max-width: 85%;
+      padding: 0.7rem 1rem;
+      border-radius: 14px;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+    .msg-bot {
+      background: #fff;
+      border: 1px solid var(--border);
+      align-self: flex-start;
+      border-bottom-right-radius: 4px;
+    }
+    .msg-user {
+      background: var(--primary);
+      color: #fff;
+      align-self: flex-end;
+      border-bottom-left-radius: 4px;
+    }
+    .chat-suggestions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      background: #fff;
+      border-top: 1px solid var(--border);
+    }
+    .chat-suggestions button {
+      background: #eef2f8;
+      border: none;
+      padding: 0.35rem 0.7rem;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      color: var(--primary);
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .chat-suggestions button:hover { background: #dde5f0; }
+    .chat-input-area {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.75rem;
+      background: #fff;
+      border-top: 1px solid var(--border);
+    }
+    .chat-input-area input {
+      flex: 1;
+      padding: 0.65rem 0.9rem;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+    .chat-input-area input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.2); }
+    .chat-send {
+      background: var(--gold-gradient);
+      color: var(--primary);
+      border: none;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    /* Goal selector modal */
+    .goal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 44, 89, 0.55);
+      z-index: 300;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .goal-overlay.open { display: flex; }
+    .goal-modal {
+      background: #fff;
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+    .goal-modal h2 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-size: 1.35rem;
+    }
+    .goal-modal > p {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .goal-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .goal-btn {
+      text-align: right;
+      padding: 1rem 1.15rem;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      background: #fafbfc;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--primary);
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .goal-btn:hover {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      box-shadow: 0 4px 14px rgba(212, 160, 23, 0.2);
+    }
+
+    /* Mobile */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--primary);
+      cursor: pointer;
+    }
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: repeat(2, 1fr); }
+      .contact-grid { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .nav { display: none; }
+      .nav.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #fff;
+        padding: 1rem;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+      }
+      .menu-toggle { display: block; }
+      .header-inner { flex-wrap: wrap; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .chat-panel { left: 0.75rem; right: 0.75rem; width: auto; }
+      .whatsapp-fab { bottom: 1.25rem; right: 1rem; width: 54px; height: 54px; }
+      .chat-fab { bottom: 1.25rem; left: 1rem; width: 54px; height: 54px; }
+      .whatsapp-fab svg { width: 28px; height: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Goal Selector (first visit) -->
+  <div class="goal-overlay" id="goalOverlay">
+    <div class="goal-modal">
+      <h2>مرحبًا بك في ذهبية طيبة</h2>
+      <p>اختر هدفك لنوجّهك مباشرة إلى ما تحتاجه:</p>
+      <div class="goal-options">
+        <button class="goal-btn" data-goal="contractor">أبحث عن مقاول لمشروع جديد</button>
+        <button class="goal-btn" data-goal="sub">أبحث عن مقاول باطن</button>
+        <button class="goal-btn" data-goal="om">أبحث عن تشغيل وصيانة</button>
+        <button class="goal-btn" data-goal="equip">أحتاج معدات ثقيلة</button>
+        <button class="goal-btn" data-goal="verify">أريد التحقق من الخبرة والمستندات</button>
+        <button class="goal-btn" data-goal="browse">استكشف البروفايل كاملًا</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#home" class="logo">
+        <div class="logo-mark">ذط</div>
+        <span>ذهبية طيبة</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="القائمة">☰</button>
+      <nav class="nav" id="mainNav">
+        <a href="#home" class="active">الرئيسية</a>
+        <a href="#about">من نحن</a>
+        <a href="#services">الخدمات</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#equipment">المعدات</a>
+        <a href="#trust">الثقة والوثائق</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+      <div class="header-cta">
+        <button class="lang-toggle" id="langToggle">EN</button>
+        <a href="#contact" class="btn btn-accent">اطلب عرضًا</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge">منذ 1990 · شريك تنفيذ متكامل</div>
+        <h1>من التخطيط إلى التسليم<br><span>بجودة موثوقة</span></h1>
+        <p class="hero-desc">
+          شركة ذهبية طيبة للمقاولات العامة — خبرة أكثر من ثلاثة عقود في المشاريع الإنشائية والتشغيلية للقطاعات الرياضية والطبية والحكومية.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-accent">استكشف مشاريعنا</a>
+          <a href="#contact" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:#fff;">اطلب عرض سعر</a>
+          <button class="btn btn-ghost" style="color:#fff;" onclick="openChat()">تحدث مع المساعد الذكي</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="1990">1990</span>
+            <span class="stat-label">سنة التأسيس</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="250000">250,000+</span>
+            <span class="stat-label">م² منجز</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="42">42+</span>
+            <span class="stat-label">مشروع نوعي</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">8</span>
+            <span class="stat-label">قطاعات خدمة</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-icon">🏗️</div>
+        <p style="opacity:0.9;margin-bottom:0.5rem;">شريك موثوق للجهات الحكومية والقطاع الخاص</p>
+        <div class="trust-strip">
+          <span class="trust-chip">استاد الأمير عبدالله الفيصل</span>
+          <span class="trust-chip">مدينة الأمير سلطان الرياضية</span>
+          <span class="trust-chip">مجمع الأدلاء</span>
+          <span class="trust-chip">مركز المدينة الطبي</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section-alt" id="about">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>من نحن</h2>
+        <p>مسيرة ممتدة منذ 1990 في تنفيذ المشاريع الإنشائية والتشغيلية بأعلى معايير الجودة والسلامة</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1990</div>
+          <div class="timeline-text">تأسيس الشركة وبداية العمل في المقاولات العامة</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">التسعينيات – 2000</div>
+          <div class="timeline-text">التوسع في مشاريع الطرق والترميم والمرافق الحكومية</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2010 – 2020</div>
+          <div class="timeline-text">تنفيذ مشاريع نوعية في المنشآت الرياضية والطبية والفنادق</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">اليوم</div>
+          <div class="timeline-text">شريك تنفيذ متكامل يغطي المقاولات العامة، الصيانة والتشغيل، والمعدات الثقيلة في مناطق متعددة بالمملكة</div>
+        </div>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <h4>الرؤية</h4>
+          <p style="color:var(--muted);font-size:0.9rem;">أن نكون الشريك المفضل في تنفيذ المشاريع الإنشائية والتشغيلية بمعايير عالمية</p>
+        </div>
+        <div class="value-card">
+          <h4>الرسالة</h4>
+          <p style="color:var(--muted);font-size:0.9rem;">تقديم حلول متكاملة من التخطيط إلى التسليم بجودة عالية والتزام بالمواعيد</p>
+        </div>
+        <div class="value-card">
+          <h4>القيم</h4>
+          <p style="color:var(--muted);font-size:0.9rem;">الجودة · السلامة · الشفافية · الالتزام · الابتكار</p>
+        </div>
+        <div class="value-card">
+          <h4>مناطق العمل</h4>
+          <p style="color:var(--muted);font-size:0.9rem;">الرياض · مكة · المدينة · المنطقة الشرقية · ومناطق أخرى</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>خدماتنا</h2>
+        <p>ثمانية مجالات خدمة متكاملة تغطي دورة حياة المشروع بالكامل</p>
+      </div>
+      <div id="servicesList">
+        <div class="service-item open">
+          <div class="service-header" onclick="toggleService(this)">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="service-num">1</span>
+              <span>المقاولات العامة</span>
+            </div>
+            <span class="service-chevron">▼</span>
+          </div>
+          <div class="service-body">
+            تنفيذ مشاريع المقاولات العامة بمختلف أحجامها للجهات الحكومية والقطاع الخاص، مع إدارة كاملة للمشروع من التخطيط إلى التسليم.
+            <div class="service-meta">
+              <span class="tag">نطاق واسع</span>
+              <span class="tag">إدارة مشاريع</span>
+            </div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-header" onclick="toggleService(this)">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="service-num">2</span>
+              <span>الأعمال الإنشائية والمعمارية</span>
+            </div>
+            <span class="service-chevron">▼</span>
+          </div>
+          <div class="service-body">
+            تنفيذ الهياكل الخرسانية والأعمال المعمارية والتشطيبات للمشاريع السكنية والتجارية والرياضية والطبية.
+            <div class="service-meta"><span class="tag">خرسانة</span><span class="tag">تشطيبات</span></div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-header" onclick="toggleService(this)">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="service-num">3</span>
+              <span>الطرق والرصف</span>
+            </div>
+            <span class="service-chevron">▼</span>
+          </div>
+          <div class="service-body">
+            إنشاء وصيانة الطرق وأعمال الرصف والبنية التحتية المرتبطة بها وفق المواصفات المعتمدة.
+            <div class="service-meta"><span class="tag">طرق</span><span class="tag">رصف</span></div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-header" onclick="toggleService(this)">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="service-num">4</span>
+              <span>الترميم والتأهيل</span>
+            </div>
+            <span class="service-chevron">▼</span>
+          </div>
+          <div class="service-body">
+            ترميم وتأهيل المباني والمنشآت القائمة مع الحفاظ على السلامة الإنشائية والجودة الجمالية.
+            <div class="service-meta"><span class="tag">ترميم</span><span class="tag">تأهيل</span></div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-header" onclick="toggleService(this)">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="service-num">5</span>
+              <span>الصيانة والتشغيل</span>
+            </div>
+            <span class="service-chevron">▼</span>
+          </div>
+          <div class="service-body">
+            عقود صيانة وتشغيل للمنشآت والمرافق مع فرق متخصصة وضمان استمرارية الخدمة.
+            <div class="service-meta"><span class="tag">صيانة</span><span class="tag">تشغيل</span></div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-header" onclick="toggleService(this)">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="service-num">6</span>
+              <span>تشغيل وإدارة المعدات الثقيلة</span>
+            </div>
+            <span class="service-chevron">▼</span>
+          </div>
+          <div class="service-body">
+            توفير وتشغيل معدات ثقيلة (شيول، JCB، قلاب، دينة، رافعة، تريلا وغيرها) مع مشغلين محترفين.
+            <div class="service-meta"><span class="tag">معدات</span><span class="tag">تأجير وتشغيل</span></div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-header" onclick="toggleService(this)">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="service-num">7</span>
+              <span>الأعمال الكهربائية والميكانيكية</span>
+            </div>
+            <span class="service-chevron">▼</span>
+          </div>
+          <div class="service-body">
+            تنفيذ الأعمال الكهربائية والميكانيكية (MEP) ضمن المشاريع الإنشائية المتكاملة.
+            <div class="service-meta"><span class="tag">كهرباء</span><span class="tag">ميكانيكا</span></div>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-header" onclick="toggleService(this)">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span class="service-num">8</span>
+              <span>إدارة الأصول والعقود</span>
+            </div>
+            <span class="service-chevron">▼</span>
+          </div>
+          <div class="service-body">
+            إدارة الأصول والعقود التشغيلية بما يضمن الكفاءة والاستدامة طويلة الأمد.
+            <div class="service-meta"><span class="tag">أصول</span><span class="tag">عقود</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>مشاريعنا</h2>
+        <p>نماذج من المشاريع النوعية التي نفذناها في القطاعات الرياضية والطبية والحكومية</p>
+      </div>
+      <div class="filters" id="projectFilters">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="sports">رياضية</button>
+        <button class="filter-btn" data-filter="medical">طبية</button>
+        <button class="filter-btn" data-filter="gov">حكومية</button>
+        <button class="filter-btn" data-filter="commercial">تجارية</button>
+      </div>
+      <div class="cards-grid" id="projectsGrid">
+        <div class="project-card" data-sector="sports">
+          <div class="project-img">🏟️</div>
+          <div class="project-body">
+            <h3>استاد الأمير عبدالله الفيصل</h3>
+            <div class="project-meta">
+              <span class="tag">رياضي</span>
+              <span class="tag">جدة</span>
+            </div>
+            <p style="color:var(--muted);font-size:0.9rem;">تنفيذ أعمال إنشائية وتشغيلية ضمن أحد أبرز المنشآت الرياضية في المملكة.</p>
+            <div class="project-stats">
+              <div class="project-stat"><strong>مدة التنفيذ</strong> موثقة</div>
+              <div class="project-stat"><strong>القطاع</strong> رياضي</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-sector="sports">
+          <div class="project-img">⚽</div>
+          <div class="project-body">
+            <h3>مدينة الأمير سلطان الرياضية</h3>
+            <div class="project-meta">
+              <span class="tag">رياضي</span>
+              <span class="tag">الرياض</span>
+            </div>
+            <p style="color:var(--muted);font-size:0.9rem;">مشاركة في تطوير وتشغيل منشآت رياضية متكاملة.</p>
+            <div class="project-stats">
+              <div class="project-stat"><strong>المساحة</strong> واسعة</div>
+              <div class="project-stat"><strong>القطاع</strong> رياضي</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-sector="medical">
+          <div class="project-img">🏥</div>
+          <div class="project-body">
+            <h3>مركز المدينة الطبي</h3>
+            <div class="project-meta">
+              <span class="tag">طبي</span>
+              <span class="tag">المدينة المنورة</span>
+            </div>
+            <p style="color:var(--muted);font-size:0.9rem;">أعمال إنشائية وتشطيبات لمنشأة طبية متخصصة.</p>
+            <div class="project-stats">
+              <div class="project-stat"><strong>النوع</strong> مركز طبي</div>
+              <div class="project-stat"><strong>القطاع</strong> صحي</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-sector="commercial">
+          <div class="project-img">🏢</div>
+          <div class="project-body">
+            <h3>مجمع الأدلاء</h3>
+            <div class="project-meta">
+              <span class="tag">تجاري</span>
+            </div>
+            <p style="color:var(--muted);font-size:0.9rem;">تنفيذ أعمال مقاولات عامة لمجمع تجاري متعدد الاستخدامات.</p>
+            <div class="project-stats">
+              <div class="project-stat"><strong>النوع</strong> مجمع</div>
+              <div class="project-stat"><strong>القطاع</strong> تجاري</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-sector="gov">
+          <div class="project-img">🏛️</div>
+          <div class="project-body">
+            <h3>منشآت نماء</h3>
+            <div class="project-meta">
+              <span class="tag">حكومي</span>
+            </div>
+            <p style="color:var(--muted);font-size:0.9rem;">مشاريع تطوير وتشغيل مرتبطة بمنشآت نماء.</p>
+            <div class="project-stats">
+              <div class="project-stat"><strong>النوع</strong> منشآت</div>
+              <div class="project-stat"><strong>القطاع</strong> حكومي</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card" data-sector="sports">
+          <div class="project-img">🏟️</div>
+          <div class="project-body">
+            <h3>مشاريع ملاعب ومنشآت رياضية</h3>
+            <div class="project-meta">
+              <span class="tag">رياضي</span>
+              <span class="tag">متعدد</span>
+            </div>
+            <p style="color:var(--muted);font-size:0.9rem;">سجل حافل بتنفيذ وتطوير ملاعب ومنشآت رياضية بمساحات تصل إلى عشرات الآلاف من الأمتار المربعة.</p>
+            <div class="project-stats">
+              <div class="project-stat"><strong>مساحات</strong> 15,000 م²+</div>
+              <div class="project-stat"><strong>مدد</strong> 13–60 يوم</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipment -->
+  <section class="section" id="equipment">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>المعدات الثقيلة</h2>
+        <p>أسطول معدات متاح للتأجير والتشغيل مع مشغلين محترفين</p>
+      </div>
+      <div class="equip-grid">
+        <div class="equip-card">
+          <div class="equip-icon">🚜</div>
+          <h4>شيول / لودر</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">أعمال حفر وتحميل</p>
+          <span class="equip-status status-available">متاح</span>
+        </div>
+        <div class="equip-card">
+          <div class="equip-icon">🚧</div>
+          <h4>JCB</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">حفر وتنقيب</p>
+          <span class="equip-status status-available">متاح</span>
+        </div>
+        <div class="equip-card">
+          <div class="equip-icon">🚛</div>
+          <h4>قلاب</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">نقل مواد</p>
+          <span class="equip-status status-available">متاح</span>
+        </div>
+        <div class="equip-card">
+          <div class="equip-icon">🚚</div>
+          <h4>دينةة</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">نقل متوسط</p>
+          <span class="equip-status status-busy">قيد التشغيل</span>
+        </div>
+        <div class="equip-card">
+          <div class="equip-icon">🏗️</div>
+          <h4>رافعة</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">رفع أحمال</p>
+          <span class="equip-status status-available">متاح</span>
+        </div>
+        <div class="equip-card">
+          <div class="equip-icon">🛻</div>
+          <h4>تريلا</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">نقل ثقيل</p>
+          <span class="equip-status status-available">متاح</span>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="#contact" class="btn btn-primary">اطلب معدة أو خدمة تشغيل</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="section section-alt" id="trust">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>مركز الثقة والوثائق</h2>
+        <p>شهادات الإنجاز والاعتمادات والمستندات الرسمية — جاهزة للتحقق</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="icon">📜</div>
+          <h4>شهادات الإنجاز</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">معرض شهادات قابلة للتكبير</p>
+        </div>
+        <div class="trust-card">
+          <div class="icon">✅</div>
+          <h4>الاعتمادات</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">اعتمادات رسمية سارية</p>
+        </div>
+        <div class="trust-card">
+          <div class="icon">📋</div>
+          <h4>السجل التجاري</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">مستندات رسمية</p>
+        </div>
+        <div class="trust-card">
+          <div class="icon">🛡️</div>
+          <h4>الجودة والسلامة</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">أنظمة معتمدة</p>
+        </div>
+        <div class="trust-card">
+          <div class="icon">📁</div>
+          <h4>خطابات الإنجاز</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">من جهات حكومية وخاصة</p>
+        </div>
+        <div class="trust-card">
+          <div class="icon">🔍</div>
+          <h4>مركز تحميل</h4>
+          <p style="color:var(--muted);font-size:0.85rem;">مستندات قابلة للبحث</p>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:1.5rem;color:var(--muted);font-size:0.9rem;">
+        * يتم تحديث قائمة الشهادات والمستندات دوريًا. تواصل معنا للحصول على نسخ رسمية محدثة.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>اطلب عرض سعر أو تواصل معنا</h2>
+        <p>نموذج قصير متعدد الخطوات — نرد عليك في أقرب وقت</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>ذهبية طيبة للمقاولات العامة</h3>
+          <p>شريك تنفيذ متكامل منذ 1990</p>
+          <br>
+          <p>📞 الهاتف: <a href="tel:+966000000000">يُحدَّث لاحقًا</a></p>
+          <p>✉️ البريد: <a href="mailto:info@example.com">يُحدَّث لاحقًا</a></p>
+          <p>💬 واتساب: <a href="https://wa.me/966505632832" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">+966 50 563 2832</a></p>
+          <p>📍 مناطق العمل: الرياض · مكة · المدينة · الشرقية</p>
+          <br>
+          <p style="font-size:0.9rem;opacity:0.8;">بعد إرسال الطلب ستحصل على رقم مرجعي، وتصل البيانات إلى فريق المبيعات.</p>
+        </div>
+        <div class="form-card">
+          <form id="quoteForm" onsubmit="return submitQuote(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>نوع العميل</label>
+                <select name="clientType" required>
+                  <option value="">اختر...</option>
+                  <option>حكومي</option>
+                  <option>شركة</option>
+                  <option>مطور</option>
+                  <option>فرد</option>
+                  <option>مورد</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>نوع الخدمة</label>
+                <select name="serviceType" required>
+                  <option value="">اختر...</option>
+                  <option>مقاولات عامة</option>
+                  <option>أعمال إنشائية</option>
+                  <option>طرق ورصف</option>
+                  <option>ترميم وتأهيل</option>
+                  <option>صيانة وتشغيل</option>
+                  <option>معدات ثقيلة</option>
+                  <option>كهرباء وميكانيكا</option>
+                  <option>أخرى</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>الموقع التقريبي</label>
+              <input type="text" name="location" placeholder="مثال: الرياض – حي النرجس" required />
+            </div>
+            <div class="form-group">
+              <label>وصف مختصر للمشروع</label>
+              <textarea name="description" rows="3" placeholder="صف احتياجك باختصار..." required></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>الاسم</label>
+                <input type="text" name="name" required />
+              </div>
+              <div class="form-group">
+                <label>الجوال</label>
+                <input type="tel" name="phone" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>البريد الإلكتروني (اختياري)</label>
+              <input type="email" name="email" />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:0.85rem;">إرسال طلب العرض</button>
+            <div class="form-success" id="formSuccess">
+              تم استلام طلبك بنجاح. رقمك المرجعي: <strong id="refNum"></strong><br>
+              سيتواصل معك فريقنا قريبًا.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>ذهبية طيبة للمقاولات العامة</h4>
+        <p style="font-size:0.9rem;opacity:0.8;margin-bottom:0.75rem;">شريك تنفيذ متكامل من التخطيط إلى التسليم منذ 1990</p>
+        <p style="font-size:0.85rem;opacity:0.7;">هذا البروفايل التفاعلي مبني على مقترح تطوير ملف الشركة.</p>
+      </div>
+      <div>
+        <h4>روابط سريعة</h4>
+        <a href="#about">من نحن</a>
+        <a href="#services">الخدمات</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#equipment">المعدات</a>
+      </div>
+      <div>
+        <h4>الثقة</h4>
+        <a href="#trust">الشهادات والمستندات</a>
+        <a href="#contact">اطلب عرضًا</a>
+      </div>
+      <div>
+        <h4>تواصل</h4>
+        <a href="#contact">نموذج الطلب</a>
+        <a href="#" onclick="openChat();return false;">المساعد الذكي</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 ذهبية طيبة للمقاولات العامة · بروفايل تفاعلي ذكي · جميع الحقوق محفوظة
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/966505632832" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" title="تواصل عبر واتساب" aria-label="واتساب">
+    <span class="whatsapp-tooltip">تواصل عبر واتساب</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Chat FAB & Panel -->
+  <button class="chat-fab" id="chatFab" onclick="toggleChat()" title="المساعد الذكي">💬</button>
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">
+      <div>
+        <h3>المساعد الذكي</h3>
+        <span style="font-size:0.8rem;opacity:0.85;">يجيب من معلومات الشركة المعتمدة فقط</span>
+      </div>
+      <button class="chat-close" onclick="toggleChat()">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="msg msg-bot">
+        مرحبًا! أنا مساعد ذهبية طيبة. أستطيع الإجابة عن الخدمات، المشاريع، المعدات، والمناطق التي نعمل فيها. كيف أساعدك؟
+      </div>
+    </div>
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button onclick="askChat('ما الخدمات التي تقدمونها؟')">ما الخدمات؟</button>
+      <button onclick="askChat('هل تنفذون مشاريع في الرياض؟')">مشاريع في الرياض؟</button>
+      <button onclick="askChat('ما المعدات المتاحة؟')">المعدات المتاحة</button>
+      <button onclick="askChat('كيف أطلب عرض سعر؟')">طلب عرض سعر</button>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" id="chatInput" placeholder="اكتب سؤالك..." onkeydown="if(event.key==='Enter')sendChat()" />
+      <button class="chat-send" onclick="sendChat()">➤</button>
+    </div>
+  </div>
+
+  <script>
+    // ========== Goal selector ==========
+    const goalOverlay = document.getElementById('goalOverlay');
+    if (!sessionStorage.getItem('goalChosen')) {
+      goalOverlay.classList.add('open');
+    }
+    document.querySelectorAll('.goal-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const goal = btn.dataset.goal;
+        sessionStorage.setItem('goalChosen', goal);
+        goalOverlay.classList.remove('open');
+        // Smart routing
+        const routes = {
+          contractor: '#projects',
+          sub: '#services',
+          om: '#services',
+          equip: '#equipment',
+          verify: '#trust',
+          browse: '#home'
+        };
+        const target = routes[goal] || '#home';
+        setTimeout(() => {
+          document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
+        }, 200);
+        if (goal === 'equip') {
+          setTimeout(() => openChat(), 600);
+        }
+      });
+    });
+
+    // ========== Mobile menu ==========
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mainNav').classList.toggle('open');
+    });
+
+    // ========== Nav active state ==========
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+
+    // ========== Services accordion ==========
+    function toggleService(header) {
+      const item = header.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.service-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    }
+
+    // ========== Project filters ==========
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-card').forEach(card => {
+          if (filter === 'all' || card.dataset.sector === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // ========== Quote form ==========
+    function submitQuote(e) {
+      e.preventDefault();
+      const ref = 'GT-' + Date.now().toString().slice(-6);
+      document.getElementById('refNum').textContent = ref;
+      document.getElementById('formSuccess').style.display = 'block';
+      e.target.reset();
+      return false;
+    }
+
+    // ========== Chat Assistant ==========
+    const knowledge = {
+      'خدمات|تقدمون|ما الخدمات': `نقدم ثماني خدمات رئيسية:
+1. المقاولات العامة
+2. الأعمال الإنشائية والمعمارية
+3. الطرق والرصف
+4. الترميم والتأهيل
+5. الصيانة والتشغيل
+6. تشغيل وإدارة المعدات الثقيلة
+7. الأعمال الكهربائية والميكانيكية
+8. إدارة الأصول والعقود
+
+المصدر: صفحة الخدمات.`,
+      'رياض|مكة|مدينة|شرقية|مناطق|تنفذون': `نعم، نعمل في مناطق متعددة بالمملكة تشمل الرياض ومكة والمدينة المنورة والمنطقة الشرقية وغيرها. يمكن فلترة المشاريع حسب الموقع في صفحة المشاريع.`,
+      'رياضي|ملاعب|استاد|سلطان|فيصل': `لدينا خبرة قوية في القطاع الرياضي، منها:
+• استاد الأمير عبدالله الفيصل
+• مدينة الأمير سلطان الرياضية
+• مشاريع ملاعب ومنشآت رياضية بمساحات كبيرة ومدد تنفيذ قصيرة (من 13 إلى 60 يومًا في بعض الحالات).`,
+      'صيانة|تشغيل': `نعم، نقدم خدمات الصيانة والتشغيل للمنشآت والمرافق ضمن عقود متخصصة، بالإضافة إلى إدارة الأصول والعقود.`,
+      'معدات|شيول|JCB|قلاب|رافعة|تريلا|دينة': `أسطول المعدات يشمل: شيول/لودر، JCB، قلاب، دينة، رافعة، تريلا وغيرها. يمكن طلب معدة أو خدمة تشغيل عبر نموذج التواصل. بعض المعدات متاحة حاليًا وبعضها قيد التشغيل.`,
+      'عرض|سعر|طلب|تواصل|كيف أطلب': `يمكنك طلب عرض سعر عبر:
+1. نموذج "اطلب عرض سعر" في صفحة التواصل
+2. أو التحدث معي هنا وسأوجّهك
+
+بعد الإرسال تحصل على رقم مرجعي ويتواصل معك فريق المبيعات.`,
+      'شهادات|مستندات|وثائق|اعتماد': `يوجد مركز ثقة ووثائق يضم شهادات الإنجاز والاعتمادات والسجل التجاري وخطابات الإنجاز ومستندات الجودة والسلامة. يمكن طلب نسخ رسمية محدثة عبر نموذج التواصل.`,
+      'من أنتم|تاريخ|تأسيس|1990': `شركة ذهبية طيبة للمقاولات العامة تأسست عام 1990. نحن شريك تنفيذ متكامل للمشاريع الإنشائية والتشغيلية من التخطيط إلى التسليم، مع سجل في المشاريع الرياضية والطبية والحكومية.`,
+      'مساحة|أرقام|250': `من الأرقام الموثقة في ملف الشركة: مساحات تصل إلى 15,000 م² في مشاريع محددة، وإجمالي مساحات منجزة يتجاوز 250,000 م²، مع مدد تنفيذ موثقة مثل 13، 43، 58، 60 يومًا في بعض المشاريع.`
+    };
+
+    function findAnswer(q) {
+      const lower = q.toLowerCase();
+      for (const [keys, answer] of Object.entries(knowledge)) {
+        const parts = keys.split('|');
+        if (parts.some(k => lower.includes(k.toLowerCase()))) {
+          return answer;
+        }
+      }
+      return null;
+    }
+
+    function addMsg(text, isUser) {
+      const div = document.createElement('div');
+      div.className = 'msg ' + (isUser ? 'msg-user' : 'msg-bot');
+      div.textContent = text;
+      document.getElementById('chatMessages').appendChild(div);
+      document.getElementById('chatMessages').scrollTop = 9999;
+    }
+
+    function askChat(q) {
+      document.getElementById('chatInput').value = q;
+      sendChat();
+    }
+
+    function sendChat() {
+      const input = document.getElementById('chatInput');
+      const q = input.value.trim();
+      if (!q) return;
+      addMsg(q, true);
+      input.value = '';
+      setTimeout(() => {
+        const ans = findAnswer(q);
+        if (ans) {
+          addMsg(ans, false);
+        } else {
+          addMsg('عذرًا، لا تتوفر لدي معلومة معتمدة حول هذا السؤال حاليًا. يمكنك التواصل عبر نموذج طلب العرض وسيتولى الفريق الرد بدقة، أو جرّب سؤالًا عن: الخدمات، المشاريع، المعدات، المناطق، أو الشهادات.', false);
+        }
+      }, 400);
+    }
+
+    function toggleChat() {
+      document.getElementById('chatPanel').classList.toggle('open');
+    }
+    function openChat() {
+      document.getElementById('chatPanel').classList.add('open');
+    }
+
+    // Lang toggle (placeholder)
+    document.getElementById('langToggle').addEventListener('click', function() {
+      alert('النسخة الإنجليزية قيد الإعداد — سيتم تفعيلها بعد توفير الترجمة المعتمدة للمصطلحات الهندسية.');
+    });
+  </script>
+</body>
+</html>
